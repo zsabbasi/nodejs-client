@@ -160,7 +160,7 @@ se.withdraw('ONION', '123456890', '1.0', function (res) {
 
 // Restore password (disable method)
 // Params: email
-se.remindPassword('kirill.holodyuk@gmail.com', function (res) {
+se.remindPassword('test@gmail.com', function (res) {
     console.log(res);
 });
 ```
