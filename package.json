@@ -1,0 +1,37 @@
+{
+  "name": "stocks-exchange-client",
+  "version": "1.0.0",
+  "description": "Stocks.Exchange provides all the core exchange functionality, and additional merchant tools available via the HTTPS API where all returned messages are in JSON. It's much easier to work with the API by using one of the clients provided by StocksExchange, so while this page describes the API in case you want or need to build your own client, the examples use the NodeJS client.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/kirillholodyuk/nodejs-client.git"
+  },
+  "keywords": [
+    "api",
+    "client",
+    "request",
+    "stocks.exchange"
+  ],
+  "author": "Stocks.Exchange",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/kirillholodyuk/nodejs-client#readme",
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "http-build-query": "^0.7.0",
+    "pkg": "^4.3.3",
+    "request": "^2.87.0"
+  }
+}
