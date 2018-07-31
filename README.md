@@ -30,12 +30,12 @@ After install use for example this code!
 
 ### Example
 ```javascript
-const StocksExchange = require('stocks-exchange-client'),
+const stocks = require('stocks-exchange-client'),
     option = {
         api_key:'123456789',
         api_secret:'123456789'
     },
-    se = new StocksExchange(option);
+    se = new stocks.client(option);
 
     se.userInfo(function (res) {
         console.log(res);

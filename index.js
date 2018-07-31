@@ -1,1 +1,1 @@
-exports.StocksExchange = require('./lib/stocks-exchange-client').StocksExchange;
+exports.client = require('./lib/stocks-exchange-client');
