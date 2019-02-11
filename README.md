@@ -169,6 +169,60 @@ se.remindPassword('test@gmail.com', function (res) {
     console.log(res);
 });
 ```
+
+### Example WebSocket API V3
+```javascript
+const StocksExchange = require('stocks-exchange-client').client;
+const option = {
+    client: {
+        id: '',
+        secret: ''
+    },
+    tokenObject: {
+        'access_token': '',
+        'refresh_token': '',
+    },
+    accessTokenUrl: 'https://api3.stex.com/oauth/token',
+    scope: 'trade profile reports withdrawal',
+};
+const se = new StocksExchange(option, null, 3);
+se.subscribeOrderFillCreated(702,function (res) {
+    console.log('subscribeOrderFillCreated', res);
+});
+
+se.subscribeGlassTotalChanged(702, 'buy', function (res) {
+    console.log('subscribeGlassTotalChanged', res);
+});
+
+se.subscribeGlassRowChanged(702, 'sell', function (res) {
+    console.log('subscribeGlassRowChanged', res);
+});
+
+se.subscribeBestPriceChanged(702, 'ask', function (res) {
+    console.log('subscribeBestPriceChanged', res);
+});
+
+se.subscribeCandleChanged(702, '1', function (res) {
+    console.log('subscribeCandleChanged', res);
+});
+
+se.subscribeBalanceChanged(1, function (res) {
+    console.log('subscribeBalanceChanged', res);
+});
+
+se.subscribeUserOrder(0, 702, 'sell', function (res) {
+    console.log('subscribeUserOrder', res);
+});
+
+se.subscribeUserOrderDeleted(0, 702, function (res) {
+    console.log('subscribeUserOrderDeleted', res);
+});
+
+se.subscribeUserOrderFillCreated(0, 702, function (res) {
+    console.log('subscribeUserOrderFillCreated', res);
+});
+```
+
 ### Example API V3
 ```javascript
 const StocksExchange = require('stocks-exchange-client').client;
