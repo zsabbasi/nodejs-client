@@ -236,7 +236,7 @@ const option = {
         'refresh_token': '',
     },
     accessTokenUrl: 'https://api3.stex.com/oauth/token',
-    scope: 'trade profile reports withdrawal',
+    scope: 'push',
 };
 const se = new StocksExchange(option, null, 3);
 
