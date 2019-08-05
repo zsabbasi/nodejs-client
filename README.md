@@ -1,5 +1,8 @@
 # STEX (former Stocks.Exchange)  (Node JS API client)
 STEX (former Stocks.Exchange) provides all the core exchange functionality, and additional merchant tools available via the HTTP API where all returned messages are in JSON. It's much easier to work with the API by using one of the clients provided by STEX, so while this page describes the API in case you want or need to build your own client, the examples use the Node JS client.
+
+[![NPM](https://nodei.co/npm/stocks-exchange-client.png?compact=false)](https://npmjs.org/package/stocks-exchange-client)
+
 ## Requirements
 - Node.js
 - npm (Node.js package manager)
