@@ -440,6 +440,7 @@ se.publicCurrency(function (res) {
         },
         accessTokenUrl: 'https://api3.stex.com/oauth/token',
         scope: 'profile trade withdrawal reports push settings',
+        s2s:true
     };
     const se = new StocksExchange(option, null, 3);
 ```
