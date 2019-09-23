@@ -431,6 +431,19 @@ se.publicCurrency(function (res) {
 });
 ```
 
+### Example API V3 use Server-To-Server integrations
+```javascript
+    const StocksExchange = require('stocks-exchange-client').client;
+    const option = {
+        tokenObject: {
+            'access_token': '<access_token_hash>',
+        },
+        accessTokenUrl: 'https://api3.stex.com/oauth/token',
+        scope: 'profile trade withdrawal reports push settings',
+    };
+    const se = new StocksExchange(option, null, 3);
+```
+
 ## Common Errors
 ### Here is a list with common errors and their descriptions:
   1.    Invalid Key - not generated key or the key does not correspond to the a user
